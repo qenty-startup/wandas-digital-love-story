@@ -55,7 +55,7 @@ const TimelineSection = () => {
       description: "Por tu berraquera y superación lograste obtener la beca para ir a hacer tu maestria en España.",
       icon: <Calendar className="w-6 h-6" />,
       color: "text-accent",
-      image: wandaIcesi
+      image: wandaAlicante
     },
   ];
 
@@ -108,7 +108,7 @@ const TimelineSection = () => {
                           <img 
                             src={event.image} 
                             alt={event.title}
-                            className="w-full h-32 object-cover rounded-lg"
+                            className="w-full h-48 object-cover rounded-lg"
                           />
                         </div>
                       )}
