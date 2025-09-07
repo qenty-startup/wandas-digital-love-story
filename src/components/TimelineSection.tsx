@@ -1,6 +1,12 @@
 import { Calendar, GraduationCap, Award, Plane, Heart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import graduationImage from "@/assets/graduation.jpg";
+import graduationImage from "@/assets/wanda_colegio.jpg";
+import antoniaGata from "@/assets/antonia_gata.jpg";
+import wandaIcesi from "@/assets/wanda_icesi.jpeg";
+import wandaPurdue from "@/assets/wanda_purdue.jpeg";
+import wandaAlicante from "@/assets/wanda_neurociencias.jpeg";
+
+
 
 const TimelineSection = () => {
   const timelineEvents = [
@@ -8,14 +14,14 @@ const TimelineSection = () => {
       year: "2000",
       date: "5 de septiembre",
       title: "Nace una estrella ⭐",
-      description: "El mundo cambió para siempre cuando llegaste tú",
+      description: "El mundo cambió para siempre cuando llegaste tú, tus jóvenes papás no sabían lo grandiosa y fuerte que iba a ser esa pequeña niña.",
       icon: <Heart className="w-6 h-6" fill="currentColor" />,
       color: "text-primary",
     },
     {
       year: "2017",
       title: "Graduación Extraordinaria",
-      description: "Mejor bachiller y personera. Ya brillabas desde entonces",
+      description: "Mejor bachiller y personera. Ya brillabas desde entonces, se notaban esos dotes de lider y esas ganas de siempre ayudar a los demás.",
       icon: <GraduationCap className="w-6 h-6" />,
       color: "text-accent",
       image: graduationImage,
@@ -23,16 +29,33 @@ const TimelineSection = () => {
     {
       year: "2017",
       title: "Beca Ser Pilo Paga",
-      description: "Tu excelencia académica reconocida a nivel nacional",
+      description: "Tu excelencia académica reconocida a nivel nacional, para llevarte a una gran universidad.",
       icon: <Award className="w-6 h-6" />,
       color: "text-primary",
     },
     {
       year: "2017",
       title: "Universidad Icesi",
-      description: "Comenzó tu aventura universitaria en biología y química",
+      description: "Comenzó tu aventura universitaria y eres tan crack que no hiciste una, sino dos carreras, Biología y Química.",
       icon: <Calendar className="w-6 h-6" />,
       color: "text-accent",
+      image: wandaIcesi
+    },
+        {
+      year: "2023",
+      title: "Purdue University",
+      description: "Lograste hacer tus practicas universitarias en Estados Unidos, llenándonos de orgullo a todos.",
+      icon: <Calendar className="w-6 h-6" />,
+      color: "text-accent",
+      image: wandaPurdue
+    },
+        {
+      year: "2024",
+      title: "Instituto de Neurociencias UMH-CSIC",
+      description: "Por tu berraquera y superación lograste obtener la beca para ir a hacer tu maestria en España.",
+      icon: <Calendar className="w-6 h-6" />,
+      color: "text-accent",
+      image: wandaIcesi
     },
   ];
 

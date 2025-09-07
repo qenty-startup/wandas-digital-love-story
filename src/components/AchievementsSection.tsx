@@ -36,7 +36,7 @@ const AchievementsSection = () => {
           Tus Logros
         </h2>
         <p className="text-center text-muted-foreground mb-8 text-lg animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-          Cada paso que das me llena de orgullo
+          como la pande me llena de orgullo, sé lo fuerte que eres y lo lejos que vas a llegar
         </p>
 
         {/* Special Message */}

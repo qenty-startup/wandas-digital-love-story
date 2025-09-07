@@ -11,7 +11,7 @@ const LoveLetterSection = ({ onRevealSurprise }: LoveLetterSectionProps) => {
     <section className="py-20 px-6 bg-gradient-warm min-h-screen flex items-center">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-primary animate-fade-in-up">
-          Mi amor,
+          Mi Wanda hermosa,
         </h2>
 
         <Card className="shadow-romantic border-border animate-scale-in" style={{ animationDelay: "0.3s" }}>
@@ -24,8 +24,7 @@ const LoveLetterSection = ({ onRevealSurprise }: LoveLetterSectionProps) => {
 
               <p className="text-lg mb-6 animate-fade-in-up" style={{ animationDelay: "0.7s" }}>
                 Han pasado casi 8 años desde que nuestras vidas se unieron, y en ese tiempo hemos compartido 
-                risas, viajes, sueños, hasta los días más difíciles, como la pandemia. Hemos construido un hogar, 
-                adoptado a nuestra pequeña Antonia, y llenado de amor cada rincón donde hemos estado.
+                risas, viajes, sueños, hasta los días más difíciles. Hemos construido un muchisimas cosas y aún nos quedan muchisimas otras más.
               </p>
 
               <p className="text-lg mb-6 animate-fade-in-up" style={{ animationDelay: "0.9s" }}>
@@ -49,7 +48,7 @@ const LoveLetterSection = ({ onRevealSurprise }: LoveLetterSectionProps) => {
               <div className="text-center mt-12 animate-scale-in" style={{ animationDelay: "1.5s" }}>
                 <div className="flex items-center justify-center gap-2 mb-8">
                   <Heart className="w-8 h-8 text-primary animate-heart-pulse" fill="currentColor" />
-                  <span className="text-2xl font-bold text-primary">Feliz cumpleaños, mi amor</span>
+                  <span className="text-2xl font-bold text-primary">Feliz cumpleaños, mi vida</span>
                   <Heart className="w-8 h-8 text-primary animate-heart-pulse" fill="currentColor" />
                 </div>
 
