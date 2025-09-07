@@ -1,14 +1,38 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState } from "react";
+import HeroSection from "@/components/HeroSection";
+import TimelineSection from "@/components/TimelineSection";
+import OurStorySection from "@/components/OurStorySection";
+import AchievementsSection from "@/components/AchievementsSection";
+import LoveLetterSection from "@/components/LoveLetterSection";
+import SurpriseSection from "@/components/SurpriseSection";
 
 const Index = () => {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+  const [currentSection, setCurrentSection] = useState<'hero' | 'journey' | 'surprise'>('hero');
+
+  const handleStartJourney = () => {
+    setCurrentSection('journey');
+  };
+
+  const handleRevealSurprise = () => {
+    setCurrentSection('surprise');
+  };
+
+  if (currentSection === 'surprise') {
+    return <SurpriseSection />;
+  }
+
+  if (currentSection === 'journey') {
+    return (
+      <div className="min-h-screen">
+        <TimelineSection />
+        <OurStorySection />
+        <AchievementsSection />
+        <LoveLetterSection onRevealSurprise={handleRevealSurprise} />
       </div>
-    </div>
-  );
+    );
+  }
+
+  return <HeroSection onStartJourney={handleStartJourney} />;
 };
 
 export default Index;
