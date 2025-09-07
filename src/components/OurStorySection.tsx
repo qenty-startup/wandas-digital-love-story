@@ -1,6 +1,6 @@
 import { Calendar, Home, Heart, Plane, MapPin } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import antoniaImage from "@/assets/antonia-cat.jpg";
+import antoniaImage from "@/assets/antonia_gata.jpg";
 
 const OurStorySection = () => {
   const ourStoryEvents = [
